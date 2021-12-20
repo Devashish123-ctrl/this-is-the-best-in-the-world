@@ -1,0 +1,138 @@
+.room-outer-div{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.room-navbar{
+    width:99%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border: 1px solid rgb(61, 46, 46); 
+}
+.chatting-message{
+    width:90%
+}
+.room-outer-div{
+    background-color: whitesmoke;
+}
+.music-club-name{
+    display: inline-block;
+}
+#hamburger{
+    width: 0.8rem;
+    height: 1rem;
+    margin-right: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+.loader {
+  border: 10px solid red; /* Light grey */
+  border-top: 10px solid whitesmoke; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 1px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;}
+
+.room-navbar h3{
+    font-weight: sans-serif;
+}
+
+
+ /* here the responsive design start here */
+ @media only screen and (min-width: 442px){
+    .room-navbar{
+        justify-content: space-around;
+    }
+ }
+ #bluetick{
+     height: 3rem;
+     width: 3rem;
+     
+ }
+
+ @media only screen and (max-height:536px){
+     #bluetick{
+         height:2rem;
+         width: 2rem;
+     }
+ }
+ @media only screen and (min-width:600px){
+  #asking-id{
+    position: absolute; width: 300px; height: 150px; top: 20%; background-color:#f5e8e8 ; margin: auto; border-radius: 40px; z-index: +1;
+    left: 40%;left: 40%;
+  }
+  #asking-id img{
+    height: 20px;width: 20px;left: 80%;position: absolute;
+  }
+  #asking-id  input{
+    background:#f5e8e8;border-bottom-color: rgb(119, 111, 223);display: block;margin: auto;margin-top: 40px;width:90%;border-top: none;border-left: none;border-right: none; outline:none;
+  }
+  #asking-id  button{
+    height: fit-content;width: fit-content;margin: auto;margin-top: 20px;display: block;border: 2px solid rgb(119,111,223);border-radius: 30px;cursor: pointer;
+  }
+  #Music-id{
+    position: absolute; width: 300px; height: 150px; top: 20%; background-color:#f5e8e8 ; margin: auto; border-radius: 40px; z-index: +2; left:40%;
+  }
+  #Music-id img{
+    height: 20px;width: 20px;left: 80%;position: absolute;
+  }
+  #Music-id  input{
+    background:#f5e8e8;border-bottom-color: rgb(119, 111, 223);display: block;margin: auto;margin-top: 40px;width:90%;border-top: none;border-left: none;border-right: none; outline:none;
+  }
+  #Music-id  button{
+    height: fit-content;width: fit-content;margin: auto;margin-top: 20px;display: block;border: 2px solid rgb(119,111,223);border-radius: 30px;cursor: pointer;
+  }
+ }
+ @media only screen and (max-width:600px){
+  #asking-id{
+    position: absolute; width: 90%; height: 150px; top: 20%; background-color:#f5e8e8 ; margin: auto; border-radius: 40px; z-index: +1
+  }
+  #asking-id img{
+    height: 20px;width: 20px;left: 80%;position: absolute;
+  }
+  #asking-id  input{
+    background:#f5e8e8;border-bottom-color: rgb(119, 111, 223);display: block;margin: auto;margin-top: 40px;width:90%;border-top: none;border-left: none;border-right: none; outline:none;
+  }
+  #asking-id  button{
+    height: fit-content;width: fit-content;margin: auto;margin-top: 20px;display: block;border: 2px solid rgb(119,111,223);border-radius: 30px;cursor: pointer;
+  }
+  #Music-id{
+    position: absolute; width: 90%; height: 150px; top: 20%; background-color:#f5e8e8 ; margin: auto; border-radius: 40px; z-index: +2;
+  }
+  #Music-id img{
+    height: 20px;width: 20px;left: 80%;position: absolute;
+  }
+  #Music-id  input{
+    background:#f5e8e8;border-bottom-color: rgb(119, 111, 223);display: block;margin: auto;margin-top: 40px;width:90%;border-top: none;border-left: none;border-right: none; outline:none;
+  }
+  #Music-id  button{
+    height: fit-content;width: fit-content;margin: auto;margin-top: 20px;display: block;border: 2px solid rgb(119,111,223);border-radius: 30px;cursor: pointer;
+  }
+ }

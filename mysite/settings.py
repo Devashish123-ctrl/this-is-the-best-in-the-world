@@ -111,13 +111,15 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+X_FRAME_OPTIONS = 'ALLOWALL'
 
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'build', 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'teenu','build', 'static')]
 
 CORS_ORIGIN_ALLOW_ALL: True
 CORS_ALLOWED_ORIGINS = [

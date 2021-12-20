@@ -1,0 +1,284 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
+#login-page-bigger-div{
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(119, 111, 223);
+
+}
+#loader {
+  border: 10px solid #3498db; /* Light grey */
+  border-top: 10px solid whitesmoke; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  animation: spin 2s linear infinite;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#Warning{
+
+  font-size: 14px;
+  display: block;
+  color:red;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top:10px;
+}
+
+#logo-photo{
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+ #login-credential{
+    
+   background-color: white;
+   border-radius: 40px;
+ }
+
+ #heading-of-status{
+display: block;
+height: fit-content;
+width: fit-content;
+margin: auto;
+font-weight: normal;
+letter-spacing: -1px;
+color: rgb(34, 24, 24);
+
+ }
+ .login-container > form{
+  margin-top :25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.username-form{
+  width: 90%;
+  display: block;
+  margin: auto;
+  height: 25px;
+  margin-top:20px;
+  border-radius: 25px;
+}
+#login-submit-button{
+ 
+ background-color: rgb(119, 111, 223);
+  border: 1px solid rgb(119, 111, 223);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 10px;
+}
+button{
+  font-size: 14px;
+  color: white;
+
+  width: 90%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.google-image{
+ display: block;
+ height: 30px;
+ width: 60%;
+ margin: auto;
+ border: 1px solid white;
+ box-shadow: 0.5px 0.5px 2px 2px #000000;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.google-image > img{
+  width: 25px;
+  height: 30px;
+  display: block;
+  margin: auto;
+}
+ 
+.register-button  {
+  display: block;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  font-size: 10px;
+  margin: auto;
+  margin-top:1rem;
+  cursor:pointer
+}
+.join-room-div{
+  background-color: whitesmoke;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.joining-room-box{
+  width: 90%;
+  height: 30%;
+  margin:auto;
+  
+}
+.joining-room-box form{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+#logo{
+  display: block;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    position:absolute;}
+
+
+#room-create-button{
+ cursor: pointer;
+}
+.joining-room-box input{
+  margin-top: 30px;
+  z-index: 1;
+  display: block;
+  width: 89%;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: rgb(119, 111, 223);
+  border-bottom-width: 2px;
+  background-color: whitesmoke;
+   
+}
+.joining-room-box input:focus {
+  outline: 0 !important;
+}
+
+
+
+ /* here the responsive design start here */
+ @media only screen and (max-width: 768px) {
+  
+    #login-credential{
+      height: 60%;
+      width: 75%;
+      display: block;
+      margin: auto;
+    
+    }
+    #heading-of-status{
+      font-size: 20px;
+    }
+    #logo{
+      display: block;
+        width: 100%;
+        height: 40%;
+        bottom: 0;
+        position:absolute;
+    }
+
+    #join-room-button{
+      margin-top: 40px;
+      width: 50%;
+      font-size: 1.5rem;
+      color: white;
+      background-color: rgb(119, 111, 223);
+      font-family: sans-serif;
+      border-radius:20px ;
+      cursor: pointer;
+    }
+    
+
+ }
+@media only screen and (min-width:768px){
+  #login-credential{
+    height: 60%;
+    width: 500px;
+    display: block;
+    margin: auto;
+   
+  }
+  #heading-of-status{
+    font-size: 30px;
+  }
+
+#join-room-button{
+  margin-top: 40px;
+  width: 450px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(119, 111, 223);
+  font-family: sans-serif;
+  border-radius:20px ;
+  cursor: pointer;
+}}
+
+/*  very low width device */
+@media only screen and (max-width: 300px) {
+  
+  #login-credential{
+    height: 60%;
+    width: 89%;
+    display: block;
+    margin: auto;
+    
+  
+  }
+  #heading-of-status{
+    font-size: 20px;
+  }
+
+}
+@media only screen and (max-height: 600px) {
+  .username-form{
+    margin-top:7px ;
+  }
+  .login-container > form{
+    margin-top: 5px;
+  }
+}
+
+
+@media only screen and (max-height: 400px) {
+  #logo{
+    visibility: hidden;
+  }
+  .google-image{
+    visibility: hidden;
+  }
+  #Warning{
+    visibility: hidden;
+  }
+  .register-button  {
+    visibility: hidden;
+  }
+  
+
+}
+
+@media only screen and (max-width:410px){
+  .joining-room-box input{
+    font-size: 1rem;
+  }
+}
+
+
+@media only screen and (min-width:800px){
+  #logo{
+    display: block;
+      width: 100%;
+      height: 60%;
+      bottom: 0;
+      position:absolute;
+  }
+}

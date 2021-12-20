@@ -1,0 +1,51 @@
+{
+  "name": "teenu",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@yimura/scraper": "^1.2.3",
+    "antd": "^4.17.2",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "movie-trailer": "^2.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-youtube": "^7.13.1",
+    "urllib": "^2.38.0",
+    "usetube": "^2.1.4",
+    "web-vitals": "^1.1.2",
+    "youtube-react": "0.0.1",
+    "youtubei": "0.0.1-rc.27"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
